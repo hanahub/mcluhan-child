@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  padding: 4px;
+  background: #fbcfcf;
+  margin-bottom: 10px;
+  display: block;
+  word-break: break-all;
+}
+
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #121212;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  text-align: center;
+  transition: background-color .15s linear;
+  font-family: Arial;
+  padding: 8px 20px;
+  cursor: pointer;
+}

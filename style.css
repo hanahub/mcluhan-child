@@ -1,0 +1,175 @@
+/*
+Theme Name: McLuhan Child
+Template: twentynineteen
+Author: Anders Norén
+Author URI: http://www.andersnoren.se
+Description: McLuhan is a clean, simple and lightweight WordPress theme, featuring a front page with a complete post archive arranged by year rather than a traditional blog flow. It also sports fully customizable background colors for the sidebar and content, Gutenberg support, a responsive design, social network links with icons, an AJAX-powered mobile search with instant results, a resume page template and a full-width template. Demo: http://www.andersnoren.se/themes/mcluhan/
+Tags: two-columns,left-sidebar,custom-menu,custom-colors,editor-style,featured-images,full-width-template,sticky-post,threaded-comments,theme-options,blog,translation-ready
+Version: 1.17.1553002605
+Updated: 2019-03-19 05:36:45
+
+*/
+
+.gbl-row {
+  margin-bottom: 20px;
+}
+
+.gbl-row .gbl-label {
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+#gbl_advertisers {
+  font-size: 1em;
+  min-width: 300px;
+}
+
+.gbl-result > p {
+  font-size: 14px;
+  color: #292929;
+  background-color: #e0dede;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.gbl-section {
+  margin-bottom: 40px;
+}
+
+.gbl-code {
+  font-size: 14px;
+}
+
+.airtable-embed {
+  width: calc(100vw - 500px);
+  margin-left: calc(-50vw + 525px);
+}
+
+.copy_text_btn {
+  padding: 8px 20px;
+  font-size: 12px;
+}
+
+.copy_text_btn .fa-copy {
+  padding-right: 6px;
+}
+.blank-page-template {
+  max-width: 1400px;
+  margin: 0px auto !important;
+}
+.blank-page-template body {
+  padding: 10px;
+}
+.blank-page-template .wpsp-cart-button .add_to_cart_inline {
+  text-align: center;
+}
+.blank-page-template #wpadminbar {
+  display: none !important;
+}
+.blank-page-template .wpsp-slider-section .slick-slide {
+  height: auto;
+}
+.blank-page-template #wpsp-slider-section.wpsp-slider-section .wpsp-product-section {
+  margin-left: 0px;
+}
+#wpsp-slider-section.wpsp-slider-section .wpsp-product {
+  padding: 6px;
+}
+.wpsp-product-section {
+  display: none;
+}
+.blank-page-template .entry-content a {
+  border-bottom: 0px;
+}
+.blank-page-template .wpsp-slider-section #sp-woo-product-slider-pro8053.wpsp-product-section .wpsp-product {
+  border: 0px;
+}
+.blank-page-template #wpsp-slider-section.wpsp-slider-section .slick-dots {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.blank-page-template #wpsp-slider-section.wpsp-slider-section.pagination-type-dots .slick-dots li button {
+  border: 1px solid #666;
+  background: transparent;
+}
+.blank-page-template .wpsp-slider-section #sp-woo-product-slider-pro8053.wpsp-product-section .wpsp-product:hover .wpsp-product-image {
+  border-color: #333;
+}
+/* .blank-page-template .wpsp-slider-section #sp-woo-product-slider-pro8053.wpsp-product-section .wpsp-product .wpsp-cart-button {
+  background-color: rgba(10,10,10,0.15);
+} */
+body.page-id-8984 #wpsp-slider-section.wpsp-slider-section {
+	width: 740px;
+	margin-left: -75px
+}
+.required {
+  color: #ef3947;
+}
+#gbl_result_message {
+  display: none;
+  margin-bottom: 20px;
+}
+body11 #wpsp-slider-section.wpsp-slider-section {
+	width: 740px;
+	margin-left: -75px
+}
+@media ( max-width: 1400px ) {
+  .blank-page-template {
+    max-width: 100%;
+  }
+}
+
+@media ( max-width: 1000px ) {
+  .blank-page-template {
+    max-width: 100%;
+  }
+  .airtable-embed {
+    width: calc(100vw - 40px);
+    margin-left: calc(-50vw + 50% + 20px);
+  }
+  body.page-id-8984 #wpsp-slider-section.wpsp-slider-section {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media ( max-width: 960px ) {
+  .blank-page-template {
+    max-width: 800px;
+  }
+}
+@media ( max-width: 860px ) {
+  .blank-page-template {
+    max-width: 700px;
+  }
+}
+@media ( max-width: 760px ) {
+  .blank-page-template {
+    max-width: 600px;
+  }
+}
+@media ( max-width: 660px ) {
+  .blank-page-template {
+    max-width: 500px;
+  }
+}
+@media ( max-width: 560px ) {
+  .blank-page-template {
+    max-width: 400px;
+  }
+}
+@media ( max-width: 460px ) {
+  .blank-page-template {
+    max-width: 300px;
+  }
+  .blank-page-template .wpsp-buttons-area {
+    display: none;
+  }
+}
+
+
+body11 #wpsp-slider-section.wpsp-slider-section {
+  overflow: visible;
+}
+body .wpsp-product a {
+  border-bottom: 0px;
+}
