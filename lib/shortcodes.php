@@ -105,4 +105,52 @@ function b2_gbl_bookmarklet() {
   return ob_get_clean();
 }
 
+
+add_shortcode("bookmarklet_tracking_table", "bookmarklet_tracking_table");
+
+function bookmarklet_tracking_table() {
+  ob_start();
+  global $wpdb;
+  
+  $rows = $wpdb->get_results("SELECT * FROM gbl_bml_trackings ORDER BY id DESC");
+  $i = 1;
+?>
+  <link rel="stylesheet" href="<?= get_stylesheet_directory_uri(); ?>/lib/bm-assets/jquery.dataTables.min.css" type="text/css" media="all">
+  <script src="<?= get_stylesheet_directory_uri(); ?>/lib/bm-assets/jquery.dataTables.min.js"></script>
+  
+  <table id="tracking_table" class="gbl_dataTables" style="width: 100%;">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>ID</th>
+        <th>User Name</th>
+        <th>Target URL</th>
+        <th>Full URL</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php foreach ($rows as $row) : ?>
+      <tr>
+        <td><?= $i; ?></td>
+        <td><?= $row->link_id; ?></td>
+        <td><?= $row->user_name; ?></td>
+        <td><?= $row->target_link; ?></td>
+        <td><?= $row->full_link; ?></td>
+        <td><?= $row->created_at; ?></td>
+      </tr>
+      <?php $i++; ?>
+      <?php endforeach; ?>
+    </tbody>
+  </table>
+  <script>
+    jQuery(document).ready(function($) {
+      $('#tracking_table').DataTable();
+    })
+  </script>
+<?php
+  return ob_get_clean();
+}
+
+
 ?>

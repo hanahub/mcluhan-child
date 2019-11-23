@@ -1,6 +1,7 @@
 <?php
 
 require get_stylesheet_directory() . '/lib/shortcodes.php';
+require get_stylesheet_directory() . '/lib/bookmarklet.php';
 
 // Exit if accessed directly
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -55,7 +56,3 @@ function mcluhan_woocommerce_loop_add_to_cart_link($result, $product, $args) {
   );
 }
 
-function mcluhan_create_table() {
-  
-} 
-add_action( 'wp', 'mcluhan_create_table' );
